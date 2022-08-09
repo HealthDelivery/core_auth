@@ -4,6 +4,8 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Description>Pacote criado para fornecer configurações basicas para </Description>
+    <PackageProjectUrl>https://github.com/HealthDelivery/core_auth</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
