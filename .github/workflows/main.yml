@@ -9,17 +9,17 @@ on:
 jobs:
   pack-push:
     env:
-      CAMINHO_PROJETO: ./core_auth/HDL.Core.Auth/HDL.Core.Auth/HDL.Core.Auth.csproj
+      CAMINHO_PROJETO: ./HDL.Core.Auth/HDL.Core.Auth/HDL.Core.Auth.csproj
       NUGET_SERVER: https://api.nuget.org/v3/index.json
 
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-    - name: Setup .NET 5
+    - name: Setup .NET 6
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 5.0.101
+        dotnet-version: 6.0.7
 
     - name: Geração do package
       run: dotnet pack ${{ env.CAMINHO_PROJETO }} -c Release -o out
